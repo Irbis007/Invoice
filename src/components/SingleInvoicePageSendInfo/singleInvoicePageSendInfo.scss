@@ -1,0 +1,38 @@
+@import '../../variables/var.scss';
+
+.invoice__from{
+    font-family: $fof--Trebuchet;
+    margin-top: 40px;
+    .from__title{
+        font-size: 24px;
+    }
+    input{
+        display: block;
+        width: 250px;
+        height: 30px;
+        border: 1px solid #959595;
+        border-radius: 3px;
+        padding: 2px 13px;
+    }
+    label{
+        position: absolute;
+        max-width: 60px;
+        font-size: 13px;
+        padding-top: 7px;
+    }
+    &-name{
+        margin: 8px 0  0 60px;
+    }
+    &-email{
+        margin: 8px 0  0 60px;
+    }
+    &-address{
+        margin: 5px 0  0 60px;
+    }
+    &-phone{
+        margin: 8px 0  0 60px;
+    }
+    &-BSphone{
+        margin: 8px 0  0 60px;
+    }
+}

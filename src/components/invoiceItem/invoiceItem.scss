@@ -1,0 +1,54 @@
+
+@import '../../variables/var.scss';
+
+.invoice__item{
+    display: grid;
+    grid-template-columns: 25px 350px 120px 95px auto;
+    column-gap: 8px;
+    row-gap: 7px;
+    margin-top: 15px;
+    align-items: center;
+    font-family: $fof--Trebuchet;
+    border-bottom: 1px dashed $invoice--border-color;
+    padding-bottom: 10px;
+    &-input{
+        border: 1px solid $invoice--border-color;
+        height: 30px;
+        border-radius: 3px;
+        padding: 3px 7px;
+    }
+    &-title{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &-descr{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 70px;
+        resize: none;
+    }
+    &-rate{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-right: 1px;
+    }
+    &-qty{
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+    &-amount{
+        grid-row: 1/2;
+        grid-column: 5/6;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: right;
+    }
+    &-delete{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

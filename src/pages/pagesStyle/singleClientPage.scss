@@ -1,0 +1,57 @@
+
+@import '../../variables/var.scss';
+
+.client__page{
+    font-family: $fof--Trebuchet;
+    &-form{
+        position: relative;
+    }
+    &-input{
+        width: calc(100% - 120px);
+        height: 30px;
+        margin: 0 0 0 120px;
+        height: 30px;display: block;
+        margin-top: 5px;
+        padding: 3px 10px;
+    }
+    label{
+        position: absolute;
+        max-width: 60px;
+        font-size: 13px;
+        padding-top: 7px;
+    }
+    .client__remove{
+        position: absolute;
+        bottom: -40px;
+        right: 10px;
+        padding: 8px;
+        font-size: 14px;
+        background: #ededed;
+        border: 1px solid $invoice--border-color;
+        border-radius: 5px;
+        cursor: pointer;
+        &:active{
+            background-color: $button--active-color;
+        }
+    }
+    .client__close{
+        position: absolute;
+        bottom: -40px;
+        left: 10px;
+        padding: 8px 12px;
+        font-size: 14px;
+        background: #ededed;
+        border: 1px solid $invoice--border-color;
+        border-radius: 5px;
+        cursor: pointer;
+        &:active{
+            background-color: $button--active-color;
+        }
+    }
+    &-title{
+        position: absolute;
+        top: 45px;
+        font-size: 24px;
+        left: 15px;
+    }
+}

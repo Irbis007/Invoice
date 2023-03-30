@@ -1,0 +1,28 @@
+
+@import '../../variables/var.scss';
+
+.clients__row{
+    border-top: 1px solid $invoice--border-color;
+    transition: all .1s;
+    &:hover{
+        background-color: #bbf9d347;
+    }
+    & a{
+        padding: 15px 10px;
+        display: flex;
+        color: black;
+        text-decoration: none;
+    }
+    &-name{
+        width: 40%;
+    }   
+    &-email{
+        width: 22.5%;
+    }
+    &-address{
+        width: 22.5%;
+    }
+    &-phone{
+        width: 15%;
+    }
+}
